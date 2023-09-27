@@ -23,6 +23,7 @@
 header {
     grid-area: header;
     height: 100px;
+    margin-bottom: 20px;
     
 }
 
@@ -79,7 +80,7 @@ footer {
 }
 
 #main-nav li a.active {
-    background-color:rgb(54, 49, 49);
+    background-color:var(--link-color);
     color: white;
   }
 

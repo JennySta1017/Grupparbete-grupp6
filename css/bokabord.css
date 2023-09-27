@@ -1,3 +1,5 @@
+/** main strukturen klistras in i varje style.css-fil */
+
 * {
     box-sizing: border-box;
 }
@@ -5,11 +7,12 @@
 .main-container {
 
     display: grid;
-    width: 90%;
+    width: 100%;
     height: 100vh;
-    margin: 0px auto;
-    
+    margin: 20px auto;
+
     grid-template-columns: repeat(3, 1fr);
+  
     grid-template-areas: 
         "header header header"
         "nav nav nav"
@@ -21,14 +24,48 @@
 header {
     grid-area: header;
     height: 100px;
-    margin-bottom: 20px;
     
 }
 
 nav {
     grid-area: nav;
-    background-color: var(--header-bg-color);
-    height: 150px;
+    height: 100px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+
+}
+
+#main-nav {
+
+justify-content: stretch;
+
+}
+
+#main-nav ul {
+   display: flex;
+    list-style-type: none;
+}
+
+#main-nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 16px;
+    color: white;
+    font-size: 20px;
+    margin-right: 80px; 
+    
+}
+
+#main-nav a:hover {
+
+    background-color: darkred;
+    color: white
+}
+
+#main-nav li a.active {
+    background-color:rgb(54, 49, 49);
+    color: white;
 }
 
 main { 
@@ -37,69 +74,36 @@ main {
     height: 500px;
 }
 
-#main-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 footer {
-    background-color: var(--header-bg-color);
+    background-color: var(--main-bg-color);
     grid-area: footer;
-    height: 150px;
+    height: 200px;
     padding: 50px;
     text-align: center;
     color: white;
 }
 
 
-#main-nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 45px;
-}
+  
 
-#main-nav a {
-    display: block;
-    text-decoration: none;
-    padding: 15px 20px;
-    color: white;
-    font-size: 20px;
-    margin: 0px 80px; 
-    
-}
-
-#main-nav a:hover {
-
-    background-color: var(--link-color);
-    color: white
-}
-
-#main-nav li a.active {
-    background-color:var(--link-color);
-    color: white;
-}
-
-h1 {
+  h1 {
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-top: 50px;
-    
-}
 
-h2 {
+  }
+
+  h2 {
     text-align: center;
     color: darkred;
-}
+  }
 
-#footer-section {
+ #footer-section
+   {
     display: flex;
     justify-content: space-around;
 
-}
+    }
 
-footer > section {
-    min-width: auto;
-}
+    footer > section {
+        min-width: auto;
+    }

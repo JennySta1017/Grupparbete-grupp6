@@ -72,7 +72,6 @@ footer {
 }
 
 #main-nav a:hover {
-
     background-color: var(--link-color);
     color: white
 }

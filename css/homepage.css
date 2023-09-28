@@ -51,7 +51,7 @@ main {
     display: block;
     text-decoration: none;
     padding: 15px 20px;
-    color: white;
+    color: var(--main-color);
     font-size: 20px; 
     min-width: 125px;  
     text-align: center;
@@ -62,12 +62,12 @@ main {
 #main-nav a:hover {
 
     background-color: var(--link-color);
-    color: white
+    color: var(--main-color);
 }
 
 #main-nav li a.active {
     background-color:var(--link-color);
-    color: white;
+    color:var(--main-color);
 }
 
 footer {
@@ -75,7 +75,7 @@ footer {
     height: 200px;
     padding: 45px;
     text-align: center;
-    color: white;
+    color: var(--main-color);
 }
 
 h1 {

@@ -23,7 +23,7 @@ nav {
 }
 
 main { 
-    background-color: beige;
+    background-color: var(-main-bg-color);
     height: 800px;
 }
 
@@ -51,9 +51,10 @@ main {
     display: block;
     text-decoration: none;
     padding: 15px 20px;
-    color: white;
+    color: var(--main-color);
     font-size: 20px; 
-    min-width: 125px;  
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif ;
+    min-width: 130px;  
     text-align: center;
     margin: 0px 50px;
     
@@ -61,34 +62,34 @@ main {
 
 #main-nav a:hover {
 
-    background-color: var(--link-color);
-    color: white
+    /* background-color: var(--link-color); */
+    color: var(--main-color);
+    border: 1px solid skyblue;
 }
 
 #main-nav li a.active {
-    background-color:var(--link-color);
-    color: white;
+    /* background-color:var(--link-color); */
+    color: var(--main-color);
+    border: 2px solid skyblue;
 }
 
 footer {
     background-color: var(--header-bg-color);
     height: 200px;
-    padding: 45px;
+    padding: 35px;
     text-align: center;
-    color: white;
+    color: var(--main-color);
+   
 }
 
 h1 {
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: caveat brush, papyrus, Georgia, Times, 'Times New Roman', serif;
     padding-top: 50px;
+    font-size: 40px;
     
 }
 
-h2 {
-    text-align: center;
-    color: darkred;
-}
 
 #footer-section {
     display: flex;
@@ -99,5 +100,6 @@ h2 {
 
 footer p {
     text-align: left;
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
 }
 

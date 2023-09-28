@@ -2,50 +2,41 @@
     box-sizing: border-box;
 }
 
-.main-container {
-
-    width: 90%;
-    height: 100vh;
-    margin: 0px auto;
-    
-}
-
-
 header {
     height: 100px;
     margin-bottom: 20px;
-    
 }
 
+/* Kista vinbar texten */
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 50px; 
+}
+
+/* Navigerings menyn*/
 nav {
     background-color: var(--header-bg-color);
     height: 100px;
 }
-
+/* Denna är till framför allt innehållet på sidan */
 main { 
     background-color: beige;
     height: 800px;
 }
-
+/* Denna är till för länkarna i navbaren */
 #main-nav {
     display: flex; 
     justify-content: center;
-    
 }
-
-
-
 
 #main-nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-top: 25px;
-    
-    
+    margin-top: 25px; 
 }
-
 
 #main-nav a {
     display: block;
@@ -55,12 +46,10 @@ main {
     font-size: 20px; 
     min-width: 125px;  
     text-align: center;
-    margin: 0px 50px;
-    
+    margin: 0px 50px; 
 }
 
 #main-nav a:hover {
-
     background-color: var(--link-color);
     color: var(--main-color);
 }
@@ -69,7 +58,16 @@ main {
     background-color:var(--link-color);
     color:var(--main-color);
 }
+/* Denna är till textrutan på homepage sidan och 
+som står brevid bilden: folk-tillsammans-med-charkbricka*/
+#text-container {
+    border: 2px solid red;
 
+    /* Behöver FIXA DENNA IMORGON!!!!!! */
+
+}
+
+/* Designen och inställning av footer innehållet */
 footer {
     background-color: var(--header-bg-color);
     height: 200px;
@@ -78,25 +76,11 @@ footer {
     color: var(--main-color);
 }
 
-h1 {
-    text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-top: 50px;
-    
-}
-
-h2 {
-    text-align: center;
-    color: darkred;
-}
-
 #footer-section {
     display: flex;
     justify-content: space-around;
-   
-
 }
-
+/* Placering av Texten om Kontakt, Öppettider & Adress */
 footer p {
     text-align: left;
 }

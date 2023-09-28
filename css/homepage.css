@@ -62,13 +62,14 @@ main {
 som står brevid bilden: folk-tillsammans-med-charkbricka*/
 #text-container {
     border: 2px solid red;
+    
 }
 
 /* Designen och inställning av footer innehållet */
 footer {
     background-color: var(--header-bg-color);
     height: 200px;
-    padding: 145px;
+    padding: 45px;
     text-align: center;
     color: var(--main-color);
 }

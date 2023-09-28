@@ -49,7 +49,7 @@ footer {
     height: 150px;
     padding: 50px;
     text-align: center;
-    color: white;
+    color: var(--main-color);
 }
 
 
@@ -65,7 +65,7 @@ footer {
     display: block;
     text-decoration: none;
     padding: 15px 20px;
-    color: white;
+    color: var(--main-color);
     font-size: 20px;
     margin: 0px 80px; 
     
@@ -73,12 +73,12 @@ footer {
 
 #main-nav a:hover {
     background-color: var(--link-color);
-    color: white
+    color: var(--main-color);
 }
 
 #main-nav li a.active {
     background-color:var(--link-color);
-    color: white;
+    color:var(--main-color);
 }
 
 h1 {

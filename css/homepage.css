@@ -1,13 +1,6 @@
 * {
     box-sizing: border-box;
 }
-/* Containern som innerhåller den första homepage bilden 
-(Rött vin som hälls i ett vinglas) */
-.main-container {
-    width: 90%;
-    height: 100vh;
-    margin: 0px auto; 
-}
 
 header {
     height: 100px;
@@ -26,12 +19,12 @@ nav {
     background-color: var(--header-bg-color);
     height: 100px;
 }
-
+/* Denna är till framför allt innehållet på sidan */
 main { 
     background-color: beige;
     height: 800px;
 }
-
+/* Denna är till för länkarna i navbaren */
 #main-nav {
     display: flex; 
     justify-content: center;
@@ -64,6 +57,11 @@ main {
 #main-nav li a.active {
     background-color:var(--link-color);
     color:var(--main-color);
+}
+/* Denna är till textrutan på homepage sidan och 
+som står brevid bilden: folk-tillsammans-med-charkbricka*/
+#text-container {
+    border: 2px solid red;
 }
 
 /* Designen och inställning av footer innehållet */

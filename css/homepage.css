@@ -21,7 +21,7 @@ nav {
 }
 /* Denna är till framför allt innehållet på sidan */
 main { 
-    background-color: beige;
+    background-color: rgb(252, 252, 240);
     /* Höjden för innehållet på sidan som är i mellan navbar och footern */
     height: 2000px;  
 }
@@ -66,7 +66,7 @@ som står brevid bilden: folk-tillsammans-med-charkbricka*/
     display: flex;
     justify-content: space-between;
 
-    /* Behöver FIXA DENNA IMORGON!!!!!! */
+    /* OM JAG VILL HA RESPONSIV SÅ ANVÄNDA GRID */
 
 }
 /* är till <p> som är till textrutan */
@@ -80,7 +80,7 @@ som står brevid bilden: folk-tillsammans-med-charkbricka*/
 /* Charkbilden stylning  */
 #img-chark{
     border: 2px solid wheat;
-    border-radius: 40%;
+    border-radius: 12%;
 }
 
 /* Designen och inställning av footer innehållet */

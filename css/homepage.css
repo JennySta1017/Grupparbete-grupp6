@@ -66,6 +66,10 @@ som står brevid bilden: folk-tillsammans-med-charkbricka*/
     /* Behöver FIXA DENNA IMORGON!!!!!! */
 
 }
+/* är till <p> som är till textrutan */
+.p-textruta {
+    color: blue;
+}
 
 /* Designen och inställning av footer innehållet */
 footer {

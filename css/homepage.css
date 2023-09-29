@@ -63,7 +63,8 @@ main {
 /* Denna är till textrutan på homepage sidan och 
 som står brevid bilden: folk-tillsammans-med-charkbricka*/
 #text-container {
-   display: flex;
+    display: flex;
+    justify-content: space-between;
 
     /* Behöver FIXA DENNA IMORGON!!!!!! */
 
@@ -72,6 +73,14 @@ som står brevid bilden: folk-tillsammans-med-charkbricka*/
 .p-textruta {
     color: blue;
     border: 2px solid red;
+    margin-right: 100px;
+    border-radius: 10%;
+    /* TEXTEN FÖRHÅLLER SIG INTE SÅ DEN GÅR UTANFÖR RAMEN */
+}
+/* 2:a imagebilden  */
+#img-chark{
+    border: 2px solid wheat;
+    border-radius: 40%;
 }
 
 /* Designen och inställning av footer innehållet */

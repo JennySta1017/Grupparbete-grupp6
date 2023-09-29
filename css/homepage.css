@@ -63,7 +63,7 @@ main {
 /* Denna är till textrutan på homepage sidan och 
 som står brevid bilden: folk-tillsammans-med-charkbricka*/
 #text-container {
-   display: grid;
+   display: flex;
 
     /* Behöver FIXA DENNA IMORGON!!!!!! */
 

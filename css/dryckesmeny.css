@@ -1,57 +1,66 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 .main-container {
 
-    display: grid;
+
     width: 90%;
     height: 100vh;
     margin: 0px auto;
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
+    
 }
 
 
 header {
-    grid-area: header;
+
     height: 100px;
     margin-bottom: 20px;
-
+    
 }
+
+h1,
+h2 {
+    text-align: center;
+    
+}
+    
+    
+
+h1 {
+
+    padding-top: 50px;
+    font-size: 70px;
+    font-family: 'freestyle script';
+}
+
+h2 {
+
+    font-family:  'freestyle script';
+    font-size: 50px; 
+}
+
+
 
 nav {
-    grid-area: nav;
-    background-color: var(--header-bg-color);
-    height: 150px;
-}
 
-main { 
-    background-color: beige;
-    grid-area: main;
-    height: 500px;
+    background-color: var(--header-bg-color);
+    height: 100px;
+
+
 }
 
 #main-nav {
-    display: flex;
+
+    display: flex; 
     justify-content: center;
-    align-items: center;
+    
+    
+
 }
 
-footer {
-    background-color: var(--header-bg-color);
-    grid-area: footer;
-    height: 150px;
-    padding: 50px;
-    text-align: center;
-    color: white;
-}
 
 
 #main-nav ul {
@@ -59,49 +68,58 @@ footer {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 25px;
+    
+    
 }
+
 
 #main-nav a {
     display: block;
     text-decoration: none;
     padding: 15px 20px;
-    color: white;
-    font-size: 20px;
-    margin: 0px 70px;
-
+    color: var(--main-color);
+    font-size: 20px; 
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif ;
+    min-width: 125px;  
+    text-align: center;
+    margin: 0px 50px;
+    
 }
 
 #main-nav a:hover {
 
-    background-color: var(--link-color);
-    color: white
+    color: var(--main-color);
+    border-bottom: 2px solid rgb(119, 4, 4);
+
 }
 
 #main-nav li a.active {
-    background-color: var(--link-color);
-    color: white;
-  }
 
-  h1 {
+    color: var(--main-color);
+    border-bottom: 2px solid rgb(119, 4, 4);
+}
+
+footer {
+    background-color: var(--header-bg-color);
+    height: 200px;
+    padding: 35px;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-top: 50px
-    
-    }
+    color: var(--main-color);
+   
+}
 
-  h2 {
-    text-align: center;
-    color: darkred;
-  }
 
- #footer-section
-   {
+
+
+#footer-section {
     display: flex;
     justify-content: space-around;
+   
 
-    }
+}
 
-    footer > section {
-        min-width: auto;
-    }
+footer p {
+    text-align: left;
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
+}

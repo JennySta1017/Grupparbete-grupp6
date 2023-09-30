@@ -100,6 +100,12 @@ nav {
     border-bottom: 2px solid rgb(119, 4, 4);
 }
 
+main {
+    background-color: var(--main-bg-color);
+    margin-top: 20px;
+    height: 800px;
+}
+
 footer {
     background-color: var(--header-bg-color);
     height: 200px;

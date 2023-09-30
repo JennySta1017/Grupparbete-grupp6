@@ -101,7 +101,7 @@ nav {
 }
 
 main {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-color);
     margin-top: 20px;
     height: 800px;
 }

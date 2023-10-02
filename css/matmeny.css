@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+
+    background-color: var(--main-bg-color);
+}
 /** huvudkontainer */
 .main-container {
 
@@ -14,7 +18,7 @@
 
 header {
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
 }
 
@@ -29,13 +33,13 @@ h2 {
 h1 {
 
     padding-top: 50px;
-    font-size: 70px;
-    font-family: 'freestyle script';
+    font-size: 80px;
+    font-family: 'kunstler script', 'great vibes', 'bradley hand itc', 'freestyle script', serif;
 }
 
 h2 {
 
-    font-family:  'freestyle script';
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px; 
 }
 
@@ -82,14 +86,14 @@ nav {
 #main-nav a:hover {
 
     color: var(--main-color);
-    border-bottom: 2px solid rgb(119, 4, 4);
+    border-bottom: 3px solid var(--link-color);
 
 }
 
 #main-nav li a.active {
 
     color: var(--main-color);
-    border-bottom: 2px solid rgb(119, 4, 4);
+    border-bottom: 3px solid var(--link-color);
 }
 
 /** innehållet Matmeny */

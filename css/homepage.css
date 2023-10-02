@@ -67,8 +67,8 @@ main {
 }
 
 #main-nav a:hover {
-    border-bottom: var(--main-color);
-    color: 3px solid var(--link-color);
+    color: var(--main-color);
+    border-bottom: 3px solid var(--link-color);
 }
 
 #main-nav li a.active {

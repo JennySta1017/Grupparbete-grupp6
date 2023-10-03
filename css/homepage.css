@@ -92,6 +92,7 @@ folk-tillsammans-med-charkbricka bilden */
 /* Välkommen texten stylning */
 .h2-welcome {
     font-size: 65px;
+    text-align: center;
 }
 /* är till <p> som är till textrutan */
 .p-textruta {

@@ -31,12 +31,13 @@ nav {
     background-color: var(--header-bg-color);
     height: 100px;
 }
+
 /* Denna är till framför allt innehållet på sidan */
 main { 
     background-color:var(--main-bg-color);
     /* Höjden för innehållet på sidan som är i mellan navbar och footern */
-    height: 2000px;  
-    /* height: 100px; */
+    height: 2150px;  
+    
 }
 /* Denna är till för länkarna i navbaren */
 #main-nav {
@@ -77,25 +78,42 @@ main {
 } 
 
 /* Denna är till textrutan på homepage sidan och 
-som står brevid bilden: folk-tillsammans-med-charkbricka*/
+folk-tillsammans-med-charkbricka bilden */
 #text-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 50px;
+    gap: 7%;
 
     /* OM JAG VILL HA RESPONSIV SÅ ANVÄNDA GRID */
 
 }
-/* är till <p> som är till textrutan */
-.p-textruta {
-    color: blue;
-    border: 2px solid red;
-    margin-right: 100px;
-    border-radius: 10%;
-    /* TEXTEN FÖRHÅLLER SIG INTE SÅ DEN GÅR UTANFÖR RAMEN */
+.textcontent-under-first-picture {
+    border: 1px dotted black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 1%;
 }
-/* Charkbilden stylning  */
-#img-chark{
-    border: 2px solid wheat;
+
+/* Välkommen texten stylning */
+.h2-welcome {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 65px;
+    text-align: center;
+}
+
+/* Är till <p> som är till textrutan */
+.p-textruta {
+    color: black;
+    font-size: 25px;
+    margin: 0 50px;
+    border-radius: 1%;
+
+    /* HA EN TYP "MVH KISTA VINBAR" I KANSKE KRUSIV FONT */
+}
+
+/* Den stylningen som det har samma */
+#img-chark,
+.p-textruta {
     border-radius: 1%;
 }
 
@@ -112,6 +130,7 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
 /* Placering av Texten om Kontakt, Öppettider & Adress */
 footer p {
     text-align: left;

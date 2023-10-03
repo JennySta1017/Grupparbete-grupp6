@@ -31,12 +31,13 @@ nav {
     background-color: var(--header-bg-color);
     height: 100px;
 }
+
 /* Denna är till framför allt innehållet på sidan */
 main { 
     background-color:var(--main-bg-color);
     /* Höjden för innehållet på sidan som är i mellan navbar och footern */
-    height: 2000px;  
-    /* height: 100px; */
+    height: 2150px;  
+    
 }
 /* Denna är till för länkarna i navbaren */
 #main-nav {
@@ -88,15 +89,17 @@ folk-tillsammans-med-charkbricka bilden */
 
 }
 .textcontent-under-first-picture {
-    border: 2px dotted black;
+    border: 1px dotted black;
     border-radius: 1%;
 }
+
 /* Välkommen texten stylning */
 .h2-welcome {
     font-size: 65px;
     text-align: center;
 }
-/* är till <p> som är till textrutan */
+
+/* Är till <p> som är till textrutan */
 .p-textruta {
     color: black;
     font-size: 25px;
@@ -105,6 +108,7 @@ folk-tillsammans-med-charkbricka bilden */
 
     /* HA EN TYP "MVH KISTA VINBAR" I KANSKE KRUSIV FONT */
 }
+
 /* Charkbilden stylning  */
 #img-chark {
     /* width: 45%; */
@@ -125,6 +129,7 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
 /* Placering av Texten om Kontakt, Öppettider & Adress */
 footer p {
     text-align: left;

@@ -90,11 +90,13 @@ folk-tillsammans-med-charkbricka bilden */
 }
 .textcontent-under-first-picture {
     border: 1px dotted black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 1%;
 }
 
 /* Välkommen texten stylning */
 .h2-welcome {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 65px;
     text-align: center;
 }
@@ -109,10 +111,9 @@ folk-tillsammans-med-charkbricka bilden */
     /* HA EN TYP "MVH KISTA VINBAR" I KANSKE KRUSIV FONT */
 }
 
-/* Charkbilden stylning  */
-#img-chark {
-    /* width: 45%; */
-    border: 2px solid wheat;
+/* Den stylningen som det har samma */
+#img-chark,
+.p-textruta {
     border-radius: 1%;
 }
 

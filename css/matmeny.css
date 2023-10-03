@@ -42,15 +42,12 @@ h2 {
 }
 
 p,
-h2 {
+h2,
+a {
     font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
 
 }
 
-a {
-
-    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif ;
-}
 
 /** Navbar - gemensam layout */
 nav {
@@ -61,8 +58,6 @@ nav {
 }
 
 
-
-  /* Gemensam navbar fortsättning */
 
 #main-nav {
     display: flex; 
@@ -176,6 +171,7 @@ nav {
     border-bottom: 3px solid var(--link-color);
   }
 
+
 /** innehållet Matmeny */
 
 main { 
@@ -272,6 +268,7 @@ footer p {
 }
 
 /* Responsiv layout för olika skärmar */
+
 
 /* Mindre desktop skärmar mellan 1200px -960 px*/
 

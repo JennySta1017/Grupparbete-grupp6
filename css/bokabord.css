@@ -26,15 +26,13 @@
       background-color: var(-main-bg-color);
       height: 800px;
   }
+
   
   #main-nav {
       display: flex; 
       justify-content: center;
   
   }
-  
-  
-  
   
   #main-nav ul {
       display: flex;
@@ -69,7 +67,7 @@
       background-color:var(--link-color);
       color: var(--main-color);
   }
-  
+
   footer {
       background-color: var(--header-bg-color);
       height: 200px;
@@ -93,7 +91,110 @@
   
   }
   
-  
   footer p {
       text-align: left;
   }
+
+  /*Min egna styling till boka bord-sidan*/
+
+  .contentbok {
+    
+    display: flex;
+    justify-content: center;
+  }
+
+img{
+    max-width: 100%;
+}
+
+.bookatable {
+    position: absolute;
+    top: 47%;
+    margin:auto;
+    width: 50%;
+    height: 700px;
+    background-color: beige;
+    background: rgba(255, 252, 205, 0.5);
+    border-radius: 5%;
+    border: solid 1px black;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    position: absolute;
+    text-align: center;
+    margin-left: 8%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+#formwrapper{
+height: 600px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+
+}
+
+form {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-left: 90px;
+    font-size: 20px;
+justify-content: space-around;
+}
+
+#fname,
+#lname,
+#date,
+#phone,
+#email {
+    height: 40px;
+    width: 200px;
+    background-color: white;
+}
+
+#email {
+    margin-left: 40%;
+    
+}
+
+#radio-buttons {
+    margin-left: 40%;
+    height: 50px;
+    font-size: 16px;
+}
+
+#radio-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-left: 12%;
+}
+
+#form-send {
+    margin-right: 180px;
+margin-top: 50px;
+    height: 40px;
+    width: 200px;
+    background-color: darkred;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+
+  

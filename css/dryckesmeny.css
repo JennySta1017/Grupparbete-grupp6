@@ -9,6 +9,7 @@
     width: 90%;
     height: 100vh;
     margin: 0px auto;
+    display: block;
 
     
 }
@@ -104,6 +105,41 @@ main {
     background-color: var(--main-color);
     margin-top: 20px;
     height: 800px;
+}
+
+.rad1 {
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+
+.box-1,
+.box-3 {
+    border: 2px dotted #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    min-width: 300px;
+}
+
+img {
+    /* max-width: 300px; */
+    margin-top: 25px;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.box-4 {
+    border: 2px dotted #333;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+
 }
 
 footer {

@@ -86,17 +86,25 @@ folk-tillsammans-med-charkbricka bilden */
     /* OM JAG VILL HA RESPONSIV SÅ ANVÄNDA GRID */
 
 }
+.content-under-first-picture {
+    border: 1px solid tomato;
+}
+/* Välkommen texten stylning */
+.h2-welcome {
+    font-size: 65px;
+}
 /* är till <p> som är till textrutan */
 .p-textruta {
-    color: blue;
-    border: 2px solid red;
-    margin-right: 100px;
+    color: black;
+    font-size: 25px;
+
+    /* margin-right: 100px; */
     border-radius: 1%;
     /* TEXTEN FÖRHÅLLER SIG INTE SÅ DEN GÅR UTANFÖR RAMEN */
 }
 /* Charkbilden stylning  */
 #img-chark {
-    width: 45%;
+    /* width: 45%; */
     border: 2px solid wheat;
     border-radius: 1%;
 }

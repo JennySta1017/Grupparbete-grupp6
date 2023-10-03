@@ -7,7 +7,7 @@ body {
     background-color: var(--main-bg-color);
 }
 
-/** huvudkontainer */
+/** huvudkontainer #C49C40 guldfärg*/   
 .main-container {
 
     width: 100%;
@@ -114,7 +114,7 @@ nav {
 #dropdown-btn {
 
     position: relative;
-    padding-top: 20px;
+    padding-top: 10px;
 
   }
 
@@ -126,10 +126,15 @@ nav {
 
   }
 
+  #dropdown-btn > a {
+
+    font-size: 50px;
+  }
+
 #dropdown-content {
     display: none;
     position: absolute;
-    top: 48px;
+    top: 50px;
     left: 20px;
     background-color: var(--main-bg-color);
     /* min-width: 120px; */
@@ -166,10 +171,14 @@ nav {
 
   }
 
-  #dropdown-content a:hover {
+  #dropdown-content a:hover,
+  #dropdown-nav li a.active {
 
-    border-bottom: 3px solid var(--link-color);
+    color: var(--link-color);
+    font-style: bold;
   }
+
+  
 
 
 /** innehållet Matmeny */
@@ -359,7 +368,7 @@ footer p {
 
 footer section {
 
-    border-bottom: 3px solid var(--link-color);
+    border-bottom: 3px solid #333;
 
 }
 

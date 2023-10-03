@@ -81,13 +81,15 @@ folk-tillsammans-med-charkbricka bilden */
 #text-container {
     display: flex;
     justify-content: space-between;
-    gap: 3%;
+    padding-top: 50px;
+    gap: 7%;
 
     /* OM JAG VILL HA RESPONSIV SÅ ANVÄNDA GRID */
 
 }
-.content-under-first-picture {
-    border: 1px solid tomato;
+.textcontent-under-first-picture {
+    border: 2px dotted black;
+    border-radius: 1%;
 }
 /* Välkommen texten stylning */
 .h2-welcome {
@@ -98,10 +100,10 @@ folk-tillsammans-med-charkbricka bilden */
 .p-textruta {
     color: black;
     font-size: 25px;
-
-    /* margin-right: 100px; */
+    margin: 0 50px;
     border-radius: 1%;
-    /* TEXTEN FÖRHÅLLER SIG INTE SÅ DEN GÅR UTANFÖR RAMEN */
+
+    /* HA EN TYP "MVH KISTA VINBAR" I KANSKE KRUSIV FONT */
 }
 /* Charkbilden stylning  */
 #img-chark {

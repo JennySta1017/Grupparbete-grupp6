@@ -22,7 +22,7 @@ body {
 header {
 
     height: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     
 }
 
@@ -36,9 +36,9 @@ h2 {
 
 h1 {
 
-    padding-top: 50px;
-    font-size: 70px;
-    font-family: 'kunstler script', 'great vibes', 'bradley hand itc', 'freestyle script', serif;
+
+    font-size: 80px;
+    font-family: 'dancing script', 'great vibes', 'bradley hand itc', 'freestyle script', serif;
 
     
 }

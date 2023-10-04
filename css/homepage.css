@@ -19,8 +19,7 @@ header {
 /* Kista vinbar texten */
 h1 {
     text-align: center;
-    font-family: 'kunstler script', 'great vibes', 'bradley hand itc', 'freestyle script', serif;
-    /* font-family: 'kunstler script', 'great vibes', 'bradley hand itc', 'freestyle script', serif; */
+    font-family: 'dancing script', 'great vibes', 'bradley hand itc', 'freestyle script', serif;
     font-size: 80px; 
 }
 
@@ -35,7 +34,7 @@ nav {
 main { 
     background-color:var(--main-bg-color);
     /* Höjden för innehållet på sidan som är i mellan navbar och footern */
-    height: 2150px;  
+    height: 2300px;  
     
 }
 /* Denna är till för länkarna i navbaren */

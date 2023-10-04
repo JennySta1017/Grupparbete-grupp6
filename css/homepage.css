@@ -134,4 +134,5 @@ footer {
 /* Placering av Texten om Kontakt, Öppettider & Adress */
 footer p {
     text-align: left;
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
 }

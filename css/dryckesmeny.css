@@ -38,15 +38,20 @@ h1 {
 
     padding-top: 50px;
     font-size: 70px;
-    font-family: 'freestyle script';
+    font-family: 'kunstler script', 'great vibes', 'bradley hand itc', 'freestyle script', serif;
+
     
 }
 
 h2 {
-
-    font-family:'freestyle script';
     font-size: 30px; 
     margin-top: 50px;
+}
+
+h2, 
+p,
+a {
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
 }
 
 

@@ -34,7 +34,7 @@ nav {
 main { 
     background-color:var(--main-bg-color);
     /* Höjden för innehållet på sidan som är i mellan navbar och footern */
-    height: 2300px;  
+    min-height: 900px;  
     
 }
 /* Denna är till för länkarna i navbaren */
@@ -86,6 +86,7 @@ folk-tillsammans-med-charkbricka bilden */
     /* OM JAG VILL HA RESPONSIV SÅ ANVÄNDA GRID */
 
 }
+/* Stylningen till textrutan */
 .textcontent-under-first-picture {
     border: 1px dotted black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -115,11 +116,14 @@ folk-tillsammans-med-charkbricka bilden */
     color: darkgoldenrod;
     font-size: 80px;
 }
-
 /* Den stylningen som det har samma */
 #img-chark,
 .p-textruta {
     border-radius: 1%;
+}
+.textcontent-under-first-picture,
+#img-chark {
+    margin: 30px 0;
 }
 
 /* Designen och inställning av footer innehållet */

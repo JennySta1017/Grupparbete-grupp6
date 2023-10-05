@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokabord</title>
+    <link rel="stylesheet" href="css/bokabord.css">
+    <link rel="stylesheet" href="css/variables.css">
+</head>
+
+<body>
+
+    <div class="main-container">  <!-- huvudkontainer -->
+        
+        <header> <!--Huvudrubrik samma på alla sidor-->
+            <h1>Kista vinbar</h1>
+        </header>
+
+        <nav>
+            <div id="main-nav"> <!--Navigering samma på alla sidor-->
+                <ul>
+                <li><a href="homepage.html">Hem</a></li>
+                <li><a href="dryckesmeny.html">Dryckesmeny</a></li>
+                <li><a href="matmeny.html">Matmeny</a></li>
+                <li><a class="active" href="bokabord.html">Boka bord</a></li>
+                <li><a href="">Om oss</a></li>
+                </ul>
+           
+            </div>
+        </nav>
+
+        <main> <!--Boka bord-sidan-->
+            <div class="contentbok">
+                <!--sidans bakgrundsbild-->
+                <img src="img/ostron.webp">
+                <!--container för info och bordsbokning-->
+                <div class="bookatable">
+                    <!--Header för borsbokningsektionen-->
+                    <h2>Boka bord</h2>
+                    <!--Infotext om bordsbokningen-->
+                    <p>Välkommen att boka ditt bord hos oss här!<br>
+                        Vill du boka bord redan idag?
+                         Vänligen kontakta oss via telefon på
+                        08-567 00 00.<br>
+                        Var god fyll nedan formulär för bordsbokning.</p>
+                        <!--Wrapper för formulärsdelen och nedan alla inputs-->
+                        <div id="formwrapper">
+                    <form action="bokabord.html" method="get">
+                        <div>
+                        <label for="fname"></label>
+                        <input type="text" id="fname" name="fname" placeholder="Förnamn">
+                    </div>
+                    <div>
+                        <label for="lname"></label>
+                        <input type="text" id="lname" name="lname" placeholder="Efternamn">
+                    </div>
+                    <div>
+                        <label for="date"></label>
+                        <input type="text" id="date" name="date" placeholder="Datum">
+                    </div>
+                    <div>
+                        <label for="phone"></label>
+                        <input type="text" id="phone" name="phone" placeholder="Telefonnummer">
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="E-postadress">
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <!--Del för radioknappar-->
+                    <div id="radio-buttons">
+                        <div id="radio-text">Antal gäster?</div>
+                        <div><label for="2">2</label>
+                    <input type="radio" id="2" name="guests" value="2">
+                    
+                        <label for="3">3</label>
+                    <input type="radio" id="3" name="guests" value="2">
+                    
+                        <label for="4">4</label>
+                    <input type="radio" id="4" name="guests" value="2">
+                    
+                        <label for="5">5</label>
+                    <input type="radio" id="5" name="guests" value="2">
+                    
+                        <label for="6">6</label>
+                    <input type="radio" id="6" name="guests" value="2">
+                </div>
+                <div>
+                <label for="form-send"></label> 
+                    <input id="form-send" type="submit" name="Skicka" Value="Skicka"></div>
+                    </div>
+                    </form>
+                </div>
+                <!-- </div> -->
+            </div>
+        </main>
+
+        <footer> <!--Footer samma på alla sidor-->
+            <div id="footer-section">   
+                <section>
+                    <p>ÖPPETTIDER <br><br>
+                        måndag-torsdag 16-23 <br><br>
+                        fredag-lördag 17-02 <br><br>
+                        söndag stängt</p> 
+                </section>
+                <section>
+                    <p>HITTA HIT<br><br>
+                        Kistavägen 22B <br><br>
+                       164 40 Kista </p>   
+                </section>
+                <section>
+                    <p>KONTAKTA OSS <br><br>
+                    08-567 00 00 <br><br>
+                info@kistavinbar.com</p>
+                </section>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

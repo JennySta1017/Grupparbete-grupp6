@@ -181,26 +181,6 @@ main {
     height: 800px;
 }
 
-footer {
-    background-color: var(--header-bg-color);
-    min-height: 200px;
-    padding: 35px;
-    text-align: center;
-    color: var(--main-color);
-   
-}
-
-
-#footer-section {
-    display: flex;
-    justify-content: space-around;
-   
-}
-
-footer p {
-    text-align: left;
-    
-}
 
 /*Min egna styling till boka bord-sidan*/
 
@@ -314,3 +294,28 @@ form {
     font-size: 20px;
 
 }
+
+footer {
+    background-color: var(--header-bg-color);
+    min-height: 200px;
+    padding: 35px;
+    text-align: center;
+    color: var(--main-color);
+   
+}
+
+
+#footer-section {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+footer p {
+    text-align: left;
+    
+}
+
+
+/*Responsiv layout*/
+

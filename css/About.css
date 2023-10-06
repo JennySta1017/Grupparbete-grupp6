@@ -32,6 +32,10 @@ main {
     height: 500px;
 }
 
+pre {
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
+}
+
 #main-nav {
     display: flex;
     justify-content: center;

@@ -37,6 +37,11 @@ main {
     min-height: 900px;  
     
 }
+/* För burger meny att den inte ska visas */
+.burger-toggle {
+    display: none;
+}
+
 /* Denna är till för länkarna i navbaren */
 #main-nav {
     display: flex; 
@@ -78,13 +83,18 @@ main {
 /* Denna är till textrutan på homepage sidan och 
 folk-tillsammans-med-charkbricka bilden */
 #text-container {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    display: grid;
+    /* justify-content: space-between; */
     padding-top: 50px;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    
     gap: 7%;
-
-    /* OM JAG VILL HA RESPONSIV SÅ ANVÄNDA GRID */
-
 }
 /* Stylningen till textrutan */
 .textcontent-under-first-picture {
@@ -123,7 +133,13 @@ folk-tillsammans-med-charkbricka bilden */
 }
 .textcontent-under-first-picture,
 #img-chark {
+    grid-column: span 1;
     margin: 30px 0;
+    width: 100%;
+}
+
+#img-chark-vagratt {
+    display: none;
 }
 
 /* Designen och inställning av footer innehållet */
@@ -133,6 +149,8 @@ footer {
     padding: 35px;
     text-align: center;
     color: var(--main-color);
+    /* Ökar mellanrum mellan footern och main content */
+    margin-top: 50px;
 }
 
 #footer-section {
@@ -145,3 +163,45 @@ footer p {
     text-align: left;
     font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
 }
+
+/* Tablet */
+@media (max-width: 960px){
+
+    #main-nav a{
+        margin: 0px 12px;
+    }
+
+    #text-container {
+        /* display: flex; */
+        display: grid;
+        padding-top: 50px;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+        
+        gap: 2%;
+    }
+    #img-chark {
+        display: none;
+    }
+    #img-chark-vagratt {
+        display: grid;
+        border-radius: 1%;
+        /* width: 100%; */
+
+        /* Ange den maximala bredden för bilden */
+        max-width: 100%; 
+        /* Behåll bildens proportioner */
+        height: auto; 
+        /* Centrera bilden horisontellt */
+        margin: 0 auto; 
+    }
+}
+
+
+
+
+

@@ -153,7 +153,6 @@ nav {
   
 }
 
- 
   
   #dropdown-btn:hover #dropdown-content {
    
@@ -192,7 +191,7 @@ main {
 .box5, 
 .box7 {
 
-    border: 2px dotted #333;
+    border: 2px dotted #C49C40;
     padding: 20px;
     border-radius: 20px;
     
@@ -246,7 +245,6 @@ footer {
     background-color: var(--header-bg-color);
     min-height: 200px;
     padding: 35px;
-    text-align: center;
     color: var(--main-color);
    
 }
@@ -268,7 +266,7 @@ footer p {
 /* ***** Responsiv layout för olika skärmar ***** */
 
 
-/* Skärmar mellan 1200px - 1350px */
+/* Skärmar mellan 1200px - 1350px - för att texten ska rymmas på en rad men att inramningen runt texten inte ska bli för utdragen*/
 
 @media only screen and (max-width: 1350px) {
 
@@ -280,7 +278,7 @@ footer p {
 }
 
 
-/* Större skärmar - över 1350px */
+/* Större skärmar - över 1350px - för att inramningen runt texten inte ska bli för utdragen har jag lagt in marginaler som knuffar in den mot mitten*/
 
 @media only screen and (min-width: 1351px) {
 

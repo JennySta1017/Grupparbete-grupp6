@@ -1,109 +1,262 @@
-/** main strukturen klistras in i varje style.css-fil */
-
 * {
     box-sizing: border-box;
 }
 
+/*Vår gemensamma styling för header, nav och footer*/
+
+body {
+
+    background-color: var(--main-bg-color);
+}
+
 .main-container {
 
-    display: grid;
     width: 100%;
     height: 100vh;
-    margin: 20px auto;
-
-    grid-template-columns: repeat(3, 1fr);
-  
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
+    margin: 0px auto;
 }
-
 
 header {
-    grid-area: header;
     height: 100px;
-    
+    margin-bottom: 20px;
+
 }
 
+/* Egenskaper för text på sidan */
+h1,
+h2 {
+    text-align: center;
+
+}
+
+
+h1 {
+    font-size: 80px;
+    font-family: 'dancing script', 'great vibes', 'bradley hand itc', 'freestyle script', serif;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p,
+h2,
+a {
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+p,
+a {
+    font-size: 20px;
+}
+
+/** Navbar - gemensam layout */
 nav {
-    grid-area: nav;
+    background-color: var(--header-bg-color);
     height: 100px;
-    background-color: var(--main-bg-color);
+    margin: 0px auto;
+
+}
+
+
+
+#main-nav {
     display: flex;
     justify-content: center;
 
 }
 
-#main-nav {
 
-justify-content: stretch;
-
-}
 
 #main-nav ul {
-   display: flex;
+    display: flex;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+
+
 }
 
 #main-nav a {
     display: block;
     text-decoration: none;
-    padding: 10px 16px;
-    color: white;
+    padding: 15px 20px;
+    color: var(--main-color);
     font-size: 20px;
-    margin-right: 80px; 
-    
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
+    min-width: 125px;
+    /*För att texten inte ska hoppa ner en rad i links */
+    text-align: center;
+    margin: 0px 50px;
+
 }
 
 #main-nav a:hover {
 
-    background-color: darkred;
-    color: white
+    color: var(--main-color);
+    border-bottom: 3px solid var(--link-color);
+
 }
 
 #main-nav li a.active {
-    background-color:rgb(54, 49, 49);
-    color: white;
+
+    color: var(--main-color);
+    border-bottom: 3px solid var(--link-color);
 }
 
-main { 
+
+main {
+    min-height: 800px;
+}
+
+
+/*Min egna styling till boka bord-sidan*/
+
+.contentbok {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+img {
+    grid-column: 1/5;
+    width: 100%;
+    height: 800px;
+    
+}
+
+/**Skapar centrerad genomskinlig ruta så bakgrundsbilden syns igenom */
+.bookatable {
+    position: absolute;
+    justify-self: center;
+    top: 47%;
+    margin: auto;
+    width: 50%;
+    height: 700px;
     background-color: beige;
-    grid-area: main;
-    height: 500px;
-}
-
-footer {
-    background-color: var(--main-bg-color);
-    grid-area: footer;
-    height: 200px;
-    padding: 50px;
-    text-align: center;
-    color: white;
+    background: rgba(243, 241, 213, 0.5);
+    border-radius: 5%;
+    border: dotted 2px black;
 }
 
 
-  
-
-  h1 {
-    text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-  }
-
-  h2 {
-    text-align: center;
-    color: darkred;
-  }
-
- #footer-section
-   {
+#bookatablecontent {
     display: flex;
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+}
+
+.bookatable h2 {
+    position: absolute;
+    margin-left: 29%;
+    margin-top: 8%;
+}
+
+
+/*Styling på infotexten om bordsbokning*/
+.bookatable p {
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 20%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+}
+
+/*Bygger området för input-fälten/formuläret*/
+
+#formwrapper {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+align-content: flex-end;
+}
+
+/*skapar styling för input-fäten*/
+form {
+    width: 500px;
+    height: 340px;
+    column-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-left: 28%;
+    font-size: 20px;
     justify-content: space-around;
 
-    }
+}
 
-    footer > section {
-        min-width: auto;
-    }
+#fname,
+#lname,
+#date,
+#phone,
+#email {
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border: solid 0.5px black;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+
+/*Skapar styling för radio-knappar och "antal gäster?"-text*/
+
+#radio-buttons {
+    margin-left: 57%;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#radio-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+/*Lägger till styling på "Skicka"-knappen*/
+
+#form-send {
+    margin-right: 220px;
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+
+}
+
+/*Footerns info-position och styling*/
+
+footer {
+    background-color: var(--header-bg-color);
+    min-height: 200px;
+    padding: 35px;
+    text-align: center;
+    color: var(--main-color);
+   
+}
+
+
+#footer-section {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+footer p {
+    text-align: left;
+    
+}

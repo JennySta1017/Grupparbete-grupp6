@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--main-bg-color);
+}
+
+/** huvudkontainer */
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+/* Kista vinbar texten */
+h1 {
+    text-align: center;
+    font-family: 'dancing script', 'great vibes', 'bradley hand itc', 'freestyle script', serif;
+    font-size: 80px; 
+}
+
+/* Navigerings menyn*/
+nav {
+    background-color: var(--header-bg-color);
+    height: 100px;
+    margin: 0px auto;
+}
+
+/* Denna är till framför allt innehållet på sidan */
+main { 
+    background-color:var(--main-bg-color);
+    /* Höjden för innehållet på sidan som är i mellan navbar och footern */
+    min-height: 900px;  
+    
+}
+/* Denna är till för länkarna i navbaren */
+#main-nav {
+    display: flex; 
+    justify-content: center;
+}
+
+/* ul listan */
+#main-nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px; 
+}
+
+/* Stylningen till länkarna i navbaren */
+#main-nav a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    color: var(--main-color);
+    font-size: 20px; 
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
+    min-width: 125px;  
+    text-align: center;
+    margin: 0px 50px; 
+}
+
+#main-nav a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--link-color);
+}
+
+#main-nav li a.active {
+    border-bottom: 3px solid var(--link-color);
+    color:var(--main-color);
+} 
+
+/* Denna är till textrutan på homepage sidan och 
+folk-tillsammans-med-charkbricka bilden */
+#text-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    gap: 7%;
+
+    /* OM JAG VILL HA RESPONSIV SÅ ANVÄNDA GRID */
+
+}
+/* Stylningen till textrutan */
+.textcontent-under-first-picture {
+    border: 1px dotted black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 1%;
+}
+
+.h2-welcome,
+.avslutningUnder-p-textrutan {
+    text-align: center;
+}
+
+/* Välkommen texten stylning */
+.h2-welcome {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 65px;
+}
+
+/* Är till <p> som är till textrutan */
+.p-textruta {
+    color: black;
+    font-size: 25px;
+    margin: 0 50px;
+    border-radius: 1%;
+}
+.avslutningUnder-p-textrutan{
+    font-family: 'rainmaker_scriptbold';
+    color: darkgoldenrod;
+    font-size: 80px;
+}
+/* Den stylningen som det har samma */
+#img-chark,
+.p-textruta {
+    border-radius: 1%;
+}
+.textcontent-under-first-picture,
+#img-chark {
+    margin: 30px 0;
+}
+
+/* Designen och inställning av footer innehållet */
+footer {
+    background-color: var(--header-bg-color);
+    height: 200px;
+    padding: 35px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+#footer-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Placering av Texten om Kontakt, Öppettider & Adress */
+footer p {
+    text-align: left;
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
+}

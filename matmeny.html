@@ -9,46 +9,117 @@
 </head>
 <body>
 
-    <div class="main-container"> 
-        <header> 
+   <div class="main-container">  <!-- huvudkontainer -->
+        
+        <header> <!--Huvudrubrik samma på alla sidor-->
             <h1>Kista vinbar</h1>
         </header>
+
         <nav>
-            <div id="main-nav">
+            <div id="main-nav"> <!--Navigering samma på alla sidor-->
                 <ul >
-                <li><a class="active" href="">Hem</a></li>
-                <li><a href="">Dryckesmeny</a></li>
-                <li><a href="">Matmeny</a></li>
-                <li><a href="">Boka bord</a></li>
+                <li><a href="homepage.html">Hem</a></li>
+                <li><a href="dryckesmeny.html">Dryckesmeny</a></li>
+                <li><a class="active" href="matmeny.html">Matmeny</a></li>
+                <li><a href="bokabord.html">Boka bord</a></li>
                 <li><a href="">Om oss</a></li>
                 </ul>
            
             </div>
+
+            <div id="dropdown-nav">
+                <ul>
+                    <li id="dropdown-btn">
+                    <a href="">=</a>
+                    <ul id="dropdown-content">
+                    <li><a href="homepage.html">Hem</a></li>
+                    <li><a href="dryckesmeny.html">Dryckesmeny</a></li>
+                    <li><a class="active" href="matmeny.html">Matmeny</a></li>
+                    <li><a href="bokabord.html">Boka bord</a></li>
+                    <li><a href="">Om oss</a></li>
+            </ul>
+                    </li>
+                </ul>
+
+            </div>
         </nav>
-        <main>
-            <div class="content1">
-                <h2>VÄLKOMMEN</h2>
-                <img src="bilder/vinbar.jpg" alt="vinbaren" style="width:100%">
-            </div> 
+
+        <main> <!--Innehållet på min sida-->
+            <div class="content-matmeny">
+               <div class="box1">
+                <h2>MATMENY</h2>
+            </div>
+               <div class="box2">
+                <p>SNACKS <br><br>
+                Salta mandlar............55 kr <br><br>
+                Stora gröna oliver......45 kr <br><br>
+                Vitlöksbröd................55 kr
+                </p>
+            </div>
+               <div class="box3">
+                
+                <img src="img/wine.png" alt="ostar och vin">
+
+                
+               </div>
+               <div class="box4">
+                
+                <p>OST & CHARK <br><br>
+                    Chark och oliver.....135 kr <br><br>
+                    Tre sorters ostar.....155 kr <br><br>
+                    Charkbricka............175 kr 
+                    </p> 
+               </div>
+               <div class="box5"> 
                
-    
-           
-            
+                <p>SMÅ RÄTTER <br><br>
+                    Dagens soppa.........165 kr <br><br>
+                    Dagens sallad.........175 kr <br><br>
+                    Grillad ciabatta........155 kr
+                    </p>
+               </div>
+
+               <div class="box6">
+
+                <img src="img/chocolates.png" alt="chokladtryfflar">
+                
+               </div>
+
+               <div class="box7">
+
+                <p>LITET SÖTT<br><br>
+                    Chokladtryffel........55 kr <br><br>
+                    Dagens sorbet.......65 kr
+                
+                </p>
+                
+               </div>
+            </div> 
         </main>
-        <footer> 
+
+        <footer> <!--Footer samma på alla sidor-->
             <div id="footer-section">   
                 <section>
-                    <p>Adress</p>
+                    <p>ÖPPETTIDER <br><br>
+                        måndag-torsdag 16-23 <br><br>
+                        fredag-lördag 17-02 <br><br>
+                        söndag stängt</p> 
                 </section>
                 <section>
-                    <p>Öppettider</p>
+                    <p>HITTA HIT<br><br>
+                        Kistavägen 22B <br><br>
+                       164 40 Kista </p>   
                 </section>
                 <section>
-                    <p>Annan info?</p>
+                    <p>KONTAKTA OSS <br><br>
+                    08-567 00 00 <br><br>
+                info@kistavinbar.com</p>
                 </section>
             </div>
-        </footer>
+          
+         </footer>
+        </div>
         
-    </div>
+
 </body>
 </html>

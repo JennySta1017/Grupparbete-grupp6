@@ -2,104 +2,401 @@
     box-sizing: border-box;
 }
 
+body {
+
+    background-color: var(--main-bg-color);
+}
+
+/* *****huvudkontainer***** */   
 .main-container {
 
-    display: grid;
-    width: 90%;
+    width: 100%;
     height: 100vh;
     margin: 0px auto;
     
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
 }
 
 
 header {
-    grid-area: header;
     height: 100px;
     margin-bottom: 20px;
+   
+}
+
+
+/* Egenskaper för text på sidan */
+h1,
+h2 {
+    text-align: center;
     
 }
 
-nav {
-    grid-area: nav;
-    background-color: var(--header-bg-color);
-    height: 150px;
+h1 {
+    font-size: 80px;
+    font-family: 'dancing script', 'great vibes', 'bradley hand itc', 'freestyle script', serif;
 }
 
-main { 
-    background-color: beige;
-    grid-area: main;
-    height: 500px;
+h2 {
+    font-size: 40px; 
+}
+
+p,
+h2,
+a {
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+p,
+a {
+    font-size: 20px;
+}
+
+
+/* *****Navbar - gemensam layout***** */
+nav {
+    background-color: var(--header-bg-color);
+    height: 100px;
+    margin: 0px auto;
+
 }
 
 #main-nav {
-    display: flex;
+    display: flex; 
     justify-content: center;
-    align-items: center;
+    
 }
-
-footer {
-    background-color: var(--header-bg-color);
-    grid-area: footer;
-    height: 150px;
-    padding: 50px;
-    text-align: center;
-    color: white;
-}
-
 
 #main-nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 25px;
+       
 }
 
 #main-nav a {
     display: block;
     text-decoration: none;
     padding: 15px 20px;
-    color: white;
-    font-size: 20px;
-    margin: 0px 80px; 
+    color: var(--main-color);
+    min-width: 125px;   /*För att texten inte ska hoppa ner en rad i links */
+    text-align: center;
+    margin: 0px 50px;
     
 }
 
 #main-nav a:hover {
 
-    background-color: var(--link-color);
-    color: white
+    color: var(--main-color);
+    border-bottom: 3px solid var(--link-color);
+
 }
 
 #main-nav li a.active {
-    background-color:var(--link-color);
-    color: white;
+
+    color: var(--main-color);
+    border-bottom: 3px solid var(--link-color);
 }
 
-h1 {
-    text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-top: 50px;
+
+/* *****dropdown-nav visas endast i mobilformat***** */
+
+#dropdown-nav {
+
+    display: none;
+}
+
+#dropdown-btn {
+
+    position: relative;
+    padding-top: 10px;
+
+}
+
+  #dropdown-btn > a {
+
+    color: var(--main-color);
+    font-size: 50px;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 12px 16px;
+
+}
+
+   #dropdown-content a {
+    display: block;
+    color: black;
+    font-weight: bold;
     
 }
 
-h2 {
-    text-align: center;
-    color: darkred;
+  #dropdown-nav a {
+
+    text-decoration: none;
+    padding: 15px 20px;
+    
+}
+
+  #dropdown-nav ul {
+
+    list-style-type: none;
+  
+}
+
+  
+  #dropdown-btn:hover #dropdown-content {
+   
+    display: block;
+
+}
+
+  #dropdown-content a:hover,
+  #dropdown-nav li a.active {
+
+    color: var(--link-color);
+    font-style: bold;
+}
+
+
+
+/** *****Content på sidan Matmeny***** */
+
+main { 
+
+    margin: 20px 40px;
+    min-height: 800px;
+}
+
+.content-matmeny {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 2%;
+
+}
+
+.box2,
+.box4,
+.box5, 
+.box7 {
+
+    border: 2px dotted #C49C40;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+.box3,
+.box6 {
+    
+    padding: 20px;
+    text-align: center; 
+    border: 5px groove #C49C40;
+    
+}
+
+
+.box3 img,
+.box6 img {
+
+    max-width: 350px;
+
+}
+
+.box1 {
+
+    grid-column: 1 / 4;
+}
+
+.box2,
+.box5 {
+
+    grid-column: 1 / 2;
+}
+
+.box3,
+.box6 {
+
+    grid-column: 2 / 3;
+    
+}
+
+.box4,
+.box7 {
+
+    grid-column: 3 / 4;
+}
+
+
+/* *****Footer gemensam layout***** */
+footer {
+
+    background-color: var(--header-bg-color);
+    min-height: 200px;
+    padding: 35px;
+    color: var(--main-color);
+   
 }
 
 #footer-section {
+
     display: flex;
     justify-content: space-around;
+   
+}
+
+footer p {
+
+    text-align: left;
+    
+}
+
+
+/* ***** Responsiv layout för olika skärmar ***** */
+
+
+/* Skärmar mellan 1200px - 1350px - för att texten ska rymmas på en rad men att inramningen runt texten inte ska bli för utdragen*/
+
+@media only screen and (max-width: 1350px) {
+
+    main {
+
+        margin: 20px 50px;
+    }
 
 }
 
-footer > section {
-    min-width: auto;
+
+/* Större skärmar - över 1350px - för att inramningen runt texten inte ska bli för utdragen har jag lagt in marginaler som knuffar in den mot mitten*/
+
+@media only screen and (min-width: 1351px) {
+
+    main {
+
+        margin: 20px 150px;
+    }
+
+}
+
+
+/* Mindre desktop skärmar mellan 1200px -960 px*/
+
+@media only screen and (max-width: 1200px) {
+
+    #main-nav a {
+
+        margin: 0px 30px;
+    }
+
+    main {
+        margin: 20px 0px;
+    }
+}
+
+
+/* Tablets mellan 960px och 768px */
+
+@media only screen and (max-width: 960px) {
+
+    #main-nav a {
+
+        margin: 0px 10px;
+    }
+
+    main {
+        margin: 20px 0px;
+        padding-bottom: 50px;
+    }
+
+    .content-matmeny {
+
+        grid-template-columns: 1fr 1fr;
+      
+    }
+
+    .box2,
+    .box4,
+    .box6 {
+        grid-column: 1 / 2;
+    }
+
+    .box5,
+    .box7 {
+        grid-column: 2 / 3;
+    }
+
+    .box3 img,
+    .box6 img {
+        max-width: 300px;
+
+}
+
+}
+
+
+/* mobiltelefoner - mindre än 768px */
+
+@media only screen and (max-width: 767px) {
+
+#main-nav {
+
+    display: none;
+}
+
+#dropdown-nav {
+
+    display: flex;
+}
+
+.content-matmeny {
+
+    display: block;
+}
+
+.box2 {
+
+    margin-bottom: 20px;
+}
+
+.box4,
+.box5 {
+    margin-bottom: 20px;
+}
+
+.box3,
+.box6 {
+
+    display: none;
+}
+
+main {
+
+    margin-bottom: 0px;
+}
+
+
+
+#footer-section {
+
+    display: block;
+    
+}
+
+footer section {
+
+    border-bottom: 2px dotted #C49C40;
+
+}
+
 }

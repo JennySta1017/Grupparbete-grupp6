@@ -5,8 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="rainmaker-script-cufonfonts/RainmakerScriptBold.OTF">
+    <link rel="stylesheet" type="text/css" href="Emmas-font/stylesheet.css">
 </head>
 <body>
-    
+    <div class="main-container">  <!-- huvudkontainer -->
+        
+        <header> <!--Huvudrubrik samma på alla sidor-->
+
+            <h1>Kista vinbar</h1>
+
+        </header>
+
+        <nav>
+            <div id="main-nav"> <!--Navigering samma på alla sidor-->
+                <ul>
+                    <li><a class="active" href="homepage.html">Hem</a></li>
+                    <li><a href="dryckesmeny.html">Dryckesmeny</a></li>
+                    <li><a href="matmeny.html">Matmeny</a></li>
+                    <li><a href="bokabord.html">Boka bord</a></li>
+                    <li><a href="">Om oss</a></li>
+                </ul>
+           </div>
+        </nav>
+
+        <main> <!--Innehållet på sidan varierar på olika sidor-->
+            
+            <div class="content-picture">
+                <!-- Homepage bilden -->
+                <img src="img/vinbarer-stockholm.webp" alt="Rött vin hälls i vinglas" style="width:100%">
+            </div> 
+
+            <!-- SKULLE KUNNA HA OM MAN FÅR IN RAINMAKER TEXTEN OCH DET STÅR NÅGOT HÄR!!
+            ATT DE LÄGGER SIG I MELLAN FÖRSTA BILDEN OCH SEN ANDRA BILDEN SÅ BLIR DET 
+            LITE MERA SOM BRYTER MELLAN DE OLIKA CONTENT INNEHÅLLET -->
+
+            <div id="text-container">
+                
+                <!-- Är till h2 och <p> för att kunna styla dem separat etc -->
+                <div class="textcontent-under-first-picture">
+                    <h2 class="h2-welcome">Välkommen</h2>
+                    <p class="p-textruta">
+                        Kista vinbar är en elegant och mysig bar för livsnjutare.<br> Vi erbjuder ett stort dryckesutbud med enklare tilltugg. <br>Vi riktar oss till finsmakare som vill njuta av ett glas vin i en avkopplande miljö.<br> <br>
+                        Vi vill att vår hemsida speglar samma atmosfär som vår lokal, en dov, lyxig och romantisk känsla.<br> Hemsidan ska även vara enkel att navigera i, där man enkelt ska kunna boka bord, kolla på våra menyer och läsa om oss och våra tidigare erfarenheter.
+                    </p>
+                    <p class="avslutningUnder-p-textrutan">Kista Vinbar</p>
+                </div>
+                <img src="img/folk-tillsammans-med-charkbricka.png" id="img-chark" alt="charkbricka som folk äter ifrån">
+            </div>
+               
+        </main>
+
+        <footer> <!--Footer samma på alla sidor-->
+            <div id="footer-section">   
+                <section>
+                    <p>ÖPPETTIDER <br><br>
+                        måndag-torsdag 16-23 <br><br>
+                        fredag-lördag 17-02 <br><br>
+                        söndag-stängt</p> 
+                </section>
+                <section>
+                    <p>HITTA HIT<br><br>
+                        Kistavägen 22B <br><br>
+                       164 40 Kista </p>   
+                </section>
+                <section>
+                    <p>KONTAKTA OSS <br><br>
+                    08-567 00 00 <br><br>
+                info@kistavinbar.com</p>
+                </section>
+            </div>
+          
+         </footer>
+        </div>
+        
 </body>
 </html>

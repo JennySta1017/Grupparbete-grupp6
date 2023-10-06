@@ -29,6 +29,17 @@
                 </ul>
 
             </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Meny</button>
+                <div class="dropdown-content">
+                  <a href="homepage.html">Hem</a>
+                  <a href="dryckesmeny.html">Dryckesmeny</a>
+                  <a href="matmeny.html">Matmeny</a>
+                  <a href="bokabord.html">Matmeny</a>
+                  <a href="">Om oss</a>
+                </div>
+              </div>
         </nav>
 
         <main> <!--Boka bord-sidan-->
@@ -41,11 +52,19 @@
                     <!--Header för bordsbokningsektionen-->
                     <h2>Boka bord</h2>
                     <!--Infotext om bordsbokningen-->
-                    <p>Välkommen att boka ditt bord hos oss här!<br>
+                    <p id="bigdesktop-p">Välkommen att boka ditt bord hos oss här!<br>
                         Vill du boka bord redan idag?<br>
                         Vänligen kontakta oss via telefon på
                         08-567 00 00.<br>
                         Var god fyll nedan formulär för bordsbokning.</p>
+
+                        <!--infotext för mindre desktopskärmar och desktop-->
+                        <p id="smalldesktop-p">
+                            Vill du boka bord redan idag?<br>
+                        Vänligen kontakta oss via telefon på<br>
+                        08-567 00 00.<br>
+                        </p>
+                        <p id="tablet-p">Var god fyll i nedan formulär för bordsbokning</p>
                     <!--Wrapper för formulärsdelen och nedan alla inputs-->
                     <div id="formwrapper">
                         <form action="bokabord.html" method="get">
@@ -95,7 +114,7 @@
                                 </div>
                             </div>
                         </form>
-                    </div><!--bookatablecontent-->
+                    </div>
                     </div>
                 </div>
 
@@ -116,8 +135,8 @@
                 </section>
                 <section>
                     <p>KONTAKTA OSS <br><br>
-                        08-567 00 00 <br><br>
-                        info@kistavinbar.com</p>
+                    08-567 00 00 <br><br>
+                info@kistavinbar.com</p>
                 </section>
             </div>
 

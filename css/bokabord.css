@@ -87,7 +87,6 @@ nav {
     font-size: 20px;
     font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
     min-width: 125px;
-    /*För att texten inte ska hoppa ner en rad i links */
     text-align: center;
     margin: 0px 50px;
 
@@ -111,8 +110,55 @@ main {
     min-height: 800px;
 }
 
+/*Meny för nav*/
 
-/*Min egna styling till boka bord-sidan*/
+/* Dropdown meny-knapp */
+.dropbtn {
+    background-color: var(--header-bg-color);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    min-width: 153px;
+    height: 60px;
+}
+
+.dropdown {
+    position: relative;
+
+}
+
+/* dropdown-katergorier (visas ej) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--header-bg-color);
+    min-width: 150px;
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: var(--main-bg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--link-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--header-bg-color);
+}
+
+
+/*Styling till boka bord-sidan*/
 
 .contentbok {
 
@@ -124,7 +170,7 @@ img {
     grid-column: 1/5;
     width: 100%;
     height: 800px;
-    
+
 }
 
 /**Skapar centrerad genomskinlig ruta så bakgrundsbilden syns igenom */
@@ -166,7 +212,7 @@ img {
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    
+
 }
 
 /*Bygger området för input-fälten/formuläret*/
@@ -176,7 +222,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-align-content: flex-end;
+    align-content: flex-end;
 }
 
 /*skapar styling för input-fäten*/
@@ -187,7 +233,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
-    margin-left: 28%;
+    margin-left: 25%;
     font-size: 20px;
     justify-content: space-around;
 
@@ -238,6 +284,7 @@ form {
 
 }
 
+
 /*Footerns info-position och styling*/
 
 footer {
@@ -246,17 +293,229 @@ footer {
     padding: 35px;
     text-align: center;
     color: var(--main-color);
-   
+
 }
 
 
 #footer-section {
     display: flex;
     justify-content: space-around;
-   
+
 }
 
 footer p {
     text-align: left;
-    
+
+}
+
+/*Responsiv web med media queries*/
+
+/*Stor Desktop*/
+@media (min-width: 1300px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    #smalldesktop-p {
+        display: none;
+    }
+
+    #tablet-p {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .dropdown {
+
+        display: none;
+    }
+
+    #smalldesktop-p {
+        display: none;
+    }
+
+    #tablet-p {
+        display: none;
+    }
+}
+
+/*Mindre Desktop*/
+
+@media (max-width: 1200px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .dropdown {
+
+        display: none;
+    }
+
+    #bigdesktop-p {
+        display: none;
+    }
+
+    #smalldesktop-p {
+        display: flex;
+        margin-top: 150px;
+        justify-content: center;
+    }
+
+    .bookatable h2 {
+        font-size: 40px;
+    }
+
+    #tablet-p {
+        display: none;
+    }
+}
+
+/*Tablet*/
+
+@media (max-width: 960px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .dropdown {
+
+        display: none;
+    }
+
+    .bookatable {
+        width: 70%;
+    }
+
+    #bigdeskto-p {
+        display: none;
+    }
+
+    #smalldesktop-p {
+        display: none;
+    }
+
+    #tablet-p {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+
+
+    #bookatablecontent h2 {
+        margin-top: 15px;
+        display: flex;
+        font-size: 30px;
+
+    }
+
+    #formwrapper {
+        justify-content: center;
+
+        display: block;
+    }
+
+    form {
+        display: block;
+        margin-top: 100px;
+        justify-content: center;
+
+    }
+
+    #fname,
+    #lname,
+    #date,
+    #phone,
+    #email {
+        width: 60%;
+        height: 50px;
+        margin-left: 12%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    #radio-buttons {
+        display: block;
+        margin-left: 22%;
+        margin-top: 10%;
+        justify-content: center;
+    }
+
+    #radio-text {
+        margin-left: 10%;
+        justify-content: center;
+
+    }
+
+    #form-send {
+        width: 200px;
+        height: 50px;
+        justify-content: center;
+
+    }
+}
+
+/*Mobil*/
+
+@media (Max-width: 768px) {
+    #container {
+        width: 100%;
+    }
+
+    .bookatable {
+        width: 70%;
+        justify-self: center;
+        margin: 10px;
+    }
+
+    #main-nav {
+
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dropbtn {
+        position: absolute;
+        font-size: 40px;
+    }
+
+    #bookatablecontent h2 {
+        margin-top: 40px;
+        display: flex;
+        font-size: 30px;
+    }
+
+    #fname,
+    #lname,
+    #date,
+    #phone,
+    #email {
+        width: 80%;
+        height: 50px;
+        margin: 15px;
+        margin-top: 15px;
+    }
+
+
+    #tablet-p {
+        display: none;
+    }
+
+    #footer-section {
+        display: block;
+        margin: 10%;
+    }
 }

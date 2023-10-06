@@ -191,15 +191,11 @@ form {
 
 /*E-post ska ligga i mitten under de andra fälten*/
 
-#email {
-    margin-left: 37%;
-
-}
 
 /*Skapar styling för radio-knappar och "antal gäster?"-text*/
 
 #radio-buttons {
-    margin-left: 43%;
+    margin-left: 45%;
     height: 50px;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -215,7 +211,7 @@ form {
 /*Lägger till styling på "Skicka"-knappen*/
 
 #form-send {
-    margin-right: 200px;
+    margin-right: 210px;
     margin-top: 50px;
     height: 40px;
     width: 200px;

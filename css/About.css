@@ -112,6 +112,7 @@ main {
 footer {
     background-color: var(--header-bg-color);
 
+    margin-top: 700px;
     height: 150px;
     padding: 50px;
     text-align: center;
@@ -129,6 +130,7 @@ footer {
 
 footer p {
     text-align: left;
+    top: 200px;
     font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 250px;
 }

@@ -70,8 +70,6 @@ nav {
     align-items: center;
 }
 
-
-
 #main-nav ul {
     display: flex;
     list-style-type: none;
@@ -87,30 +85,25 @@ nav {
     color: white;
     font-size: 20px;
     margin: 0px 80px; 
-    
 }
 
 #main-nav a:hover {
-
     background-color: var(--link-color);
     color: white
 }
 
 #main-nav li a.active {
-    
     background-color:var(--link-color);
     color: white;
 }
 
 main { 
     background-color: beige;
-    
     height: 500px;
 }
 
 footer {
     background-color: var(--header-bg-color);
-
     margin-top: 700px;
     height: 150px;
     padding: 50px;
@@ -121,9 +114,9 @@ footer {
 
 
 #footer-section {
-    display: flex;
-    justify-content: space-around;
- padding-top: 200px;
+   display: flex;
+   justify-content: space-around;
+   padding-top: 200px;
     
 }
 

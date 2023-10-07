@@ -1,14 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
 .main-container {
 
-    display: grid;
+    position: absolute;
     width: 100%;
     height: 100vh;
-    margin: 20px auto;
+    margin: 0px auto;
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer";
+   
+}
+
+header {
+    
+    height: 100px;
+    margin-bottom: 20px;
+    
+}
+
+h1 {
+  
+    font-size: 75px;
+    text-align: center;
+    font-family: dancing script;
+    padding-bottom: 100px;
+    
+}
+
+h2 {
+    text-align: center;
+    color: darkred;
+    padding-top: 70px;
+}
+
+#text {
+ position: relative;
+ top: 400px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+ font-size: 20px; 
+}
+
+#img {
+ position: relative;
+ height: 100px;
+ width: 300px;
+ left: 850px;
+ top: 200px
+}
+
+#links {
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ top: 500px;
+ position: relative;
+}
+
+nav {
+    
+    background-color: var(--header-bg-color);
+    height: 100px;
+    margin: 0px;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#main-nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 45px;
+}
+
+#main-nav a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    margin: 0px 80px; 
+    
+}
+
+#main-nav a:hover {
+
+    background-color: var(--link-color);
+    color: white
+}
+
+#main-nav li a.active {
+    
+    background-color:var(--link-color);
+    color: white;
+}
+
+main { 
+    background-color: beige;
+    
+    height: 500px;
+}
+
+footer {
+    background-color: var(--header-bg-color);
+
+    margin-top: 700px;
+    height: 150px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 700px;
+}
+
+
+#footer-section {
+    display: flex;
+    justify-content: space-around;
+ padding-top: 200px;
+    
+}
+
+footer p {
+    text-align: left;
+    top: 200px;
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 250px;
 }

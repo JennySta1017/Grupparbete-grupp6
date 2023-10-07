@@ -40,7 +40,7 @@ h2 {
 #text {
  position: relative;
  top: 400px;
- font-family: dancing script;  
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
  font-size: 20px; 
 }
 
@@ -127,9 +127,8 @@ footer {
     
 }
 
-footer > section {
-    min-width: auto;
-    padding-top: 200px;
-
+footer p {
+    text-align: left;
+    font-family: 'Franklin Gothic extra compressed', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 250px;
 }
-
